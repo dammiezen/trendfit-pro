@@ -16,3 +16,8 @@
 .calendar-edit {border-top:1px solid #d8e1db; margin-top:20px; padding-top:20px;}
 .calendar-edit .button {margin-top:14px;}
 .calendar-edit textarea {min-height:90px; resize:vertical;}
+
+.calendar-filters {display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin:15px 0 20px;}
+.calendar-filters label {display:flex;flex:1 1 150px;flex-direction:column;font-size:0.85rem;font-weight:600;}
+.calendar-filters select,.calendar-filters input {min-height:44px;width:100%;border:1px solid #bac8be;border-radius:8px;padding:9px;background:#fff;color:#17231e;}
+.calendar-filters button {min-height:44px;}
