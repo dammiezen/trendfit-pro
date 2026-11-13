@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101714"><title>TrendFit Pro — Brand Audit Studio</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<body>
+<a class="skip" href="#main">Skip to audit</a>
+<header class="topbar"><a class="logo" href="./"><span class="logo-mark">↗</span>TrendFit <b>Pro</b><span class="edition">AUDIT STUDIO</span></a><div class="top-actions"><a href="calculator.html">Legacy calculator ↗</a><span class="connection" id="connection">Checking workspace…</span><button id="logout" class="quiet" hidden>Lock workspace</button></div></header>
+<div class="shell">
+<aside class="sidebar"><div><p class="label">YOUR WORKSPACE</p><a class="nav-active" href="#main"><span>◈</span> Brand audit <span class="tiny">01</span></a><a href="calculator.html"><span>↗</span> Legacy calculator</a></div><div class="method"><span class="mini-mark">16</span><h3>One framework.<br>Every brand, considered.</h3><p>Built around your Universal Brand Marketing Strategist methodology.</p><div class="method-line">RESEARCH → STRATEGY → ACTION</div></div><p class="sidebar-foot">Private workspace · Drafts for review<br>No automatic publishing</p></aside>
+<main id="main">
+<section class="intro"><div class="label green">FROM A LINK TO A CLEAR PLAN</div><div class="intro-row"><h1>See the gaps.<br><span>Know your next move.</span></h1><p>Audit a website or public social profile. Turn the evidence into a brand-specific strategy and content you can put to work.</p></div></section>
+<section class="setup notice" id="setup" hidden><strong>The new audit interface is live. Automatic audits need activation.</strong><p>You can explore the sample report now. To analyse real links, connect the private audit service and AI account. <a class="source-link" href="https://github.com/dammiezen/trendfit-pro/blob/main/README.md" target="_blank" rel="noopener">Open the setup guide ↗</a></p></section>
+<section class="unlock card" id="unlock" hidden><div><span class="label">PRIVATE WORKSPACE</span><h2>Unlock your audit studio</h2></div><form id="login-form"><label class="sr-only" for="password">Workspace access password</label><input id="password" type="password" autocomplete="current-password" placeholder="Workspace access password" required><button class="button" type="submit">Unlock</button></form><p id="login-message" role="status"></p></section>
+<div class="start-grid">
+<section class="card audit-card"><div class="section-title"><div><span class="label">01 / START WITH THE BRAND</span><h2>Where should we look?</h2></div><span class="badge">Evidence first</span></div>
+<form id="audit-form">
+<label for="url">Website URL</label><div class="url-input"><span aria-hidden="true">↗</span><input id="url" type="url" placeholder="https://yourbrand.com" maxlength="2048" autocomplete="url"></div><p class="hint">Add at least one official website or social profile. All links should belong to the same brand.</p>
+<div class="two social-links"><div><label for="instagram">Instagram</label><input id="instagram" type="url" placeholder="https://instagram.com/yourbrand" maxlength="2048"></div><div><label for="facebook">Facebook</label><input id="facebook" type="url" placeholder="https://facebook.com/yourbrand" maxlength="2048"></div><div><label for="linkedin">LinkedIn</label><input id="linkedin" type="url" placeholder="https://linkedin.com/company/yourbrand" maxlength="2048"></div><div><label for="other">Another public profile</label><input id="other" type="url" placeholder="YouTube, TikTok or X URL" maxlength="2048"></div></div>
+<div class="two"><div><label for="objective">What do you want to improve?</label><select id="objective"><option>Qualified enquiries and leads</option><option>Brand positioning and trust</option><option>Content quality and consistency</option><option>Awareness among the right audience</option><option>Conversion journey</option></select></div><div><label for="region">Target market</label><input id="region" placeholder="e.g. Australia · English" maxlength="120"></div></div>
+<details class="context"><summary>Add brand context or content <span>Optional, but useful</span></summary><label for="notes">Audience, offers, goals, constraints or representative posts</label><textarea id="notes" maxlength="20000" rows="5" placeholder="Add the profile bio and a few complete posts if the platform blocks access. Include post dates and links where possible. Use anonymised analytics summaries if you want to discuss results."></textarea><p class="hint">Client-provided information is labelled separately from public evidence. Do not include passwords, customer records or confidential personal data.</p></details>
+<div class="workflow-note"><span class="command">/audit</span><div><strong>Your strategy runs automatically</strong><p>Business discovery, social and website audits, buyer psychology, SWOT, competitors, current trends and a complete 30-day content plan.</p></div></div>
+<div class="two"><div><label for="start-date">30-day plan begins</label><input id="start-date" type="date" required></div><div class="hint">One draft per day is a starting assumption. Confirm production capacity and posting frequency before approving.</div></div>
+<details class="context"><summary>View the default audit prompt</summary><pre class="prompt-preview">/audit
+
+Website: [your website]
+Instagram: [your Instagram]
+Facebook: [your Facebook]
+LinkedIn: [your LinkedIn]
+
+Run the Universal Brand Marketing Strategist.
+
+Research the business, audit its marketing, identify its target audience, evaluate competitors, check current brand-aligned trends, and create a complete marketing strategy and 30-day content plan.
+
+Mark unverified information clearly.
+Do not publish or schedule anything.</pre></details>
+<label class="check consent"><input id="consent" type="checkbox" required><span>I agree to send the URL, readable page content and added context to the configured AI service for this audit. Temporary reports expire from server memory after 30 minutes; no report files are stored by the app.</span></label>
+<div class="form-actions"><button class="button primary" id="run" type="submit" disabled>Audit this brand <span>↗</span></button><button class="quiet" id="sample" type="button">Explore a sample report</button></div>
+</form></section>
+<aside class="expect-card"><div class="label">YOUR AUDIT, EXPLAINED</div><h2>More than<br>a score.</h2><ol><li><span>01</span><div><strong>Read the evidence</strong><p>Inspect up to eight website pages and aim for 20 accessible recent posts per supplied social profile. Access limits are reported.</p></div></li><li><span>02</span><div><strong>Find strengths and gaps</strong><p>Separate visible observations from performance we cannot verify.</p></div></li><li><span>03</span><div><strong>Build your next moves</strong><p>Apply all 16 skill phases, deliver 18 report sections and draft a full 30-day plan.</p></div></li></ol><p class="small-note">A link cannot reveal private reach, watch time, leads or sales. These stay “unknown” unless you supply evidence.</p></aside>
+</div>
+<section id="progress" class="card progress" hidden aria-live="polite"><span class="spinner"></span><div><h2 id="progress-title">Reading public content</h2><p id="progress-text">Checking access, gathering evidence and preparing your strategy. This can take a few minutes.</p></div></section>
+<section id="error" class="notice error" hidden role="alert"></section>
+<section id="empty" class="empty"><span>◈</span><h2>Good strategy starts with understanding.</h2><p>Your evidence, priorities and tailored content will appear here.</p><div>BRAND INTELLIGENCE <i>·</i> BUYER PSYCHOLOGY <i>·</i> CONTENT & CONVERSION</div></section>
+<section id="results" hidden aria-labelledby="report-title">
+<div id="sample-notice" class="notice" hidden><strong>Illustrative sample — not a live audit.</strong> This fictional brand shows the report format. No URL was read and no AI request was made.</div>
+<div class="report-heading"><div><div class="label green" id="report-label">BRAND AUDIT / DRAFT FOR REVIEW</div><h2 id="report-title" tabindex="-1"></h2><p id="report-meta"></p></div><div class="report-actions"><button class="button" id="export">Export full report ↓</button><button class="quiet" id="print">Print / PDF</button><button class="quiet" id="clear">Clear report</button></div></div>
+<p class="report-summary" id="report-summary"></p><div class="metrics" id="metrics"></div>
+<div class="tabs" role="tablist" aria-label="Audit report sections"><button role="tab" id="tab-overview" aria-selected="true" aria-controls="overview" data-panel="overview">Overview</button><button role="tab" id="tab-strategy" aria-selected="false" aria-controls="strategy" data-panel="strategy" tabindex="-1">18-section strategy</button><button role="tab" id="tab-actions" aria-selected="false" aria-controls="actions" data-panel="actions" tabindex="-1">Action plan</button><button role="tab" id="tab-content" aria-selected="false" aria-controls="content" data-panel="content" tabindex="-1">Content studio</button><button role="tab" id="tab-evidence" aria-selected="false" aria-controls="evidence" data-panel="evidence" tabindex="-1">Sources & limits</button></div>
+<div class="panel" id="overview" role="tabpanel" aria-labelledby="tab-overview"></div><div class="panel" id="strategy" role="tabpanel" aria-labelledby="tab-strategy" hidden></div><div class="panel" id="actions" role="tabpanel" aria-labelledby="tab-actions" hidden></div><div class="panel" id="content" role="tabpanel" aria-labelledby="tab-content" hidden></div><div class="panel" id="evidence" role="tabpanel" aria-labelledby="tab-evidence" hidden></div>
+</section>
+<footer>TrendFit Pro <span>Research honestly. Create deliberately. Measure what matters.</span><span>Nothing is published automatically.</span></footer>
+</main></div>
+</body></html>

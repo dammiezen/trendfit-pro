@@ -1,0 +1,1299 @@
+{
+  "version": 3,
+  "demo": true,
+  "createdAt": "2026-11-13T07:34:38.763860+00:00",
+  "url": "https://example.com",
+  "links": [
+    {
+      "label": "Website",
+      "url": "https://example.com"
+    }
+  ],
+  "command": "/audit\n\nIllustrative sample only. No research or AI request was performed.",
+  "skillHash": "Sample \u2014 no live skill execution",
+  "startDate": "2026-11-14",
+  "objective": "Qualified enquiries",
+  "region": "Needs Client Confirmation",
+  "limitations": [
+    "This is a fictional illustration, not a live audit.",
+    "No external pages, competitors, trends or analytics were checked.",
+    "Sample calendar copy illustrates fields and is deliberately reusable; a configured live audit generates brand-specific copy."
+  ],
+  "coverage": [],
+  "sources": [],
+  "report": {
+    "brandName": "Fieldwork Studio \u00b7 sample",
+    "summary": "An illustrative hospitality design studio with a clear niche and an opportunity to make its enquiry process easier to understand. This sample demonstrates the report structure; it is not a real audit.",
+    "unknowns": [
+      "No website or social content was inspected.",
+      "Buyer needs, offers, competitors and results are not verified."
+    ],
+    "questions": [
+      "Who is the primary buyer and target market?",
+      "Which offer, proof and enquiry destination are approved?",
+      "What is the production capacity and approval process?"
+    ],
+    "findings": [
+      {
+        "title": "A specific audience",
+        "category": "strength",
+        "assessment": "Illustrative observation: the fictional studio focuses on independent hospitality businesses.",
+        "evidence": [],
+        "recommendation": "Check that the real homepage makes its audience equally clear.",
+        "priority": "medium"
+      },
+      {
+        "title": "An unclear enquiry process",
+        "category": "gap",
+        "assessment": "Illustrative gap: the sample does not explain what happens after an enquiry.",
+        "evidence": [],
+        "recommendation": "Explain the first step and set accurate expectations.",
+        "priority": "high"
+      },
+      {
+        "title": "Commercial performance",
+        "category": "unknown",
+        "assessment": "There are no analytics or sales records in this example.",
+        "evidence": [],
+        "recommendation": "Establish a qualified-enquiry baseline before judging results.",
+        "priority": "high"
+      }
+    ],
+    "modules": [
+      {
+        "id": 1,
+        "title": "Executive brand summary",
+        "status": "needs information",
+        "observations": "Fictional example: Fieldwork Studio designs practical brand identities for independent hospitality businesses.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Proposed profile: B2B design studio; audience: hospitality founders; geography: Needs Client Confirmation; offer: Needs Client Confirmation; voice: practical, calm and precise; approval owner: Needs Client Confirmation."
+      },
+      {
+        "id": 2,
+        "title": "Sources reviewed and research limitations",
+        "status": "needs information",
+        "observations": "This is an illustrative report. No live website, social profile or customer data was accessed.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Use Sources & limits to distinguish inspected evidence, client context and assumptions. A real audit lists each supplied link and its access result."
+      },
+      {
+        "id": 3,
+        "title": "Website audit",
+        "status": "needs information",
+        "observations": "The fictional homepage identifies a specialism, but the sample copy does not explain the enquiry process.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Proposed homepage structure: who we help \u2192 relevant work \u2192 process \u2192 project-fit criteria \u2192 one clear enquiry CTA. Verify that each section fits the actual offer."
+      },
+      {
+        "id": 4,
+        "title": "Social media audit",
+        "status": "needs information",
+        "observations": "No social profile was inspected. Visual consistency and posting frequency cannot be assessed.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Before evaluating performance, supply accessible recent posts or an anonymised export with dates, URLs and formats. Private reach and conversions need analytics."
+      },
+      {
+        "id": 5,
+        "title": "Marketing funnel audit",
+        "status": "needs information",
+        "observations": "The proposed journey is discovery \u2192 portfolio \u2192 project enquiry \u2192 qualification call. No conversion results are available.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Awareness: useful opening-day questions. Nurture: explain design trade-offs. Positioning: verified process examples. Lead generation: project-fit enquiry. Conversion: answer scope and next-step questions."
+      },
+      {
+        "id": 6,
+        "title": "SWOT analysis",
+        "status": "needs information",
+        "observations": "Illustrative strength: a clear hospitality specialism. Potential weakness: an unexplained first step. Opportunity hypothesis: educate founders about opening-day brand decisions. Threat hypothesis: price-based comparison.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Test the opportunity hypothesis with five actual founder conversations. Confirm whether uncertainty about design scope is a meaningful barrier before prioritising it."
+      },
+      {
+        "id": 7,
+        "title": "Competitor analysis",
+        "status": "needs information",
+        "observations": "No real competitors were researched for this sample.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "A live report aims to compare 3\u20135 relevant alternatives using public positioning, offers, proof, content and CTAs. Missing competitors stay unverified."
+      },
+      {
+        "id": 8,
+        "title": "Buyer persona and psychology map",
+        "status": "needs information",
+        "observations": "Buyer hypothesis: an independent caf\u00e9 founder preparing an opening. Needs Client Confirmation: budget, decision process and actual customer language.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "PAIN: too many launch decisions. IDENTITY: an independent operator. DESIRE: a coherent customer experience. FEAR: expensive rework. VILLAIN: fragmented advice. FRUSTRATION: generic templates. RISK: unclear scope. OBJECTION: timing and cost. All eight are hypotheses pending customer evidence."
+      },
+      {
+        "id": 9,
+        "title": "Brand positioning recommendations",
+        "status": "needs information",
+        "observations": "A potential position is practical brand design for independent hospitality founders. This is a proposal, not an approved promise.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Proposed value statement: Brand decisions that work across the places your customers meet you. Use plain explanations. Avoid unverified revenue promises, guaranteed launch results and invented testimonials."
+      },
+      {
+        "id": 10,
+        "title": "Trend intelligence and opportunity ranking",
+        "status": "needs information",
+        "observations": "No current trend claims are made. No live research was performed.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Research market-relevant industry changes and audience questions, then confirm dates and relevance. Only evidence-backed candidates receive the weighted 100-point score. Safety overrides that score."
+      },
+      {
+        "id": 11,
+        "title": "Recommended marketing strategy",
+        "status": "needs information",
+        "observations": "Proposed objective: attract suitable brand-design enquiries by explaining the process and showing verified work.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Prioritise clear offers, a credible process and relevant examples. Start with a manageable production cadence. Test education and objection-handling before scaling volume."
+      },
+      {
+        "id": 12,
+        "title": "Content pillars and funnel plan",
+        "status": "needs information",
+        "observations": "Four proposed pillars: opening-day decisions, design explained, the working process, and project-fit questions.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Opening-day decisions: awareness; founder checklist; saves. Design explained: nurture; visual example; qualified questions. Working process: positioning; real process walkthrough; portfolio visits. Project-fit questions: conversion; scope explainer; suitable enquiries. Verify all proof and assets."
+      },
+      {
+        "id": 13,
+        "title": "Platform-specific recommendations",
+        "status": "needs information",
+        "observations": "Instagram could show visual reasoning; LinkedIn could explain the business decisions behind the work. Audience preference is unverified.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Instagram: annotated visual sequences with clear captions. LinkedIn: a focused decision, evidence and business implication. Adapt each format rather than reposting unchanged. Confirm the target audience uses each channel."
+      },
+      {
+        "id": 14,
+        "title": "Lead generation and conversion improvements",
+        "status": "needs information",
+        "observations": "The enquiry form and qualification process were not tested.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Discovery \u2192 profile visit \u2192 useful example \u2192 enquiry \u2192 follow-up \u2192 qualification \u2192 project decision \u2192 referral. Proposed owner: studio lead. Verify destination, consent language, response expectations and qualification criteria."
+      },
+      {
+        "id": 15,
+        "title": "First 30-day content calendar",
+        "status": "needs information",
+        "observations": "The Content studio shows 30 illustrative daily draft entries. This example is not a verified client calendar.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "One draft per day is illustrative. Client capacity, campaign dates and approved offers must determine the final publishing frequency. Every entry remains DRAFT \u2014 NEEDS APPROVAL."
+      },
+      {
+        "id": 16,
+        "title": "KPI framework",
+        "status": "needs information",
+        "observations": "No analytics baseline was supplied.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Awareness: relevant profile visits. Nurture: useful questions and saves when available. Lead generation: qualified enquiries. Conversion: suitable enquiries progressing to a call. Establish baselines and compare controlled tests; do not infer causation from engagement."
+      },
+      {
+        "id": 17,
+        "title": "Priority action plan",
+        "status": "needs information",
+        "observations": "Address unclear enquiry expectations before increasing traffic.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "1. Clarify who the offer fits. 2. Explain the first enquiry step. 3. Gather approved project proof. 4. Test two educational angles. 5. Measure qualified enquiries."
+      },
+      {
+        "id": 18,
+        "title": "Client confirmation questions",
+        "status": "needs information",
+        "observations": "Critical business details remain unverified.",
+        "evidence": [],
+        "plan": [
+          "Confirm the facts and assumptions below with the client.",
+          "Use the proposed deliverable as a discussion draft."
+        ],
+        "deliverable": "Which services and locations are approved? What makes a good-fit enquiry? Which work can be shown? Who approves content? How much content can the team produce?"
+      }
+    ],
+    "actions": [
+      {
+        "title": "Clarify the first step",
+        "why": "Reduce uncertainty before an enquiry.",
+        "steps": [
+          "Confirm the actual enquiry process.",
+          "Draft a short explanation of who responds and what happens next.",
+          "Review the wording with the client before any live change."
+        ],
+        "owner": "Studio lead \u2014 proposed",
+        "timing": "Week 1",
+        "kpi": "Qualified enquiries and completed enquiries, once measurable",
+        "dependency": "Approved offer and contact destination"
+      },
+      {
+        "title": "Gather credible project proof",
+        "why": "Support positioning with evidence rather than broad claims.",
+        "steps": [
+          "Identify a real project cleared for publication.",
+          "Record the problem, design decisions and supported outcome.",
+          "Check client permission for assets and claims."
+        ],
+        "owner": "Creative lead \u2014 proposed",
+        "timing": "Week 2",
+        "kpi": "Relevant portfolio visits and enquiry quality",
+        "dependency": "Approved assets and factual project details"
+      }
+    ],
+    "competitors": [],
+    "brandProfile": {
+      "industry": "Hospitality brand design \u2014 fictional",
+      "businessModel": "B2B \u2014 fictional",
+      "geography": "Needs Client Confirmation",
+      "audience": "Independent hospitality founders \u2014 hypothesis",
+      "offers": "Needs Client Confirmation",
+      "valueProposition": "Practical brand decisions across customer touchpoints \u2014 proposal",
+      "voice": "Clear, calm, practical \u2014 proposal",
+      "pillars": [
+        "Opening-day decisions",
+        "Design explained",
+        "Working process",
+        "Project-fit questions"
+      ],
+      "proposedCtas": [
+        "Review one customer touchpoint"
+      ],
+      "restrictedClaims": [
+        "No invented project results"
+      ],
+      "campaignGoals": [
+        "Qualified enquiries"
+      ],
+      "approvalContact": "Needs Client Confirmation",
+      "analyticsBaseline": "Not available"
+    },
+    "trends": [],
+    "calendar": [
+      {
+        "day": 1,
+        "date": "2026-11-14",
+        "platform": "Instagram",
+        "pillar": "Opening-day decisions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "awareness",
+        "topic": "Start with the customer moment",
+        "format": "Static educational post",
+        "hooks": [
+          "Start with the customer moment.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Start with the customer moment.",
+        "copy": "Start with the customer moment.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Start with the customer moment. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Start with the customer moment.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 2,
+        "date": "2026-11-15",
+        "platform": "LinkedIn",
+        "pillar": "Design explained",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "nurture",
+        "topic": "What a design brief needs",
+        "format": "Static educational post",
+        "hooks": [
+          "What a design brief needs.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "What a design brief needs.",
+        "copy": "What a design brief needs.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: What a design brief needs. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "What a design brief needs.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 3,
+        "date": "2026-11-16",
+        "platform": "Instagram",
+        "pillar": "Working process",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "positioning",
+        "topic": "The menu readability check",
+        "format": "Static educational post",
+        "hooks": [
+          "The menu readability check.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "The menu readability check.",
+        "copy": "The menu readability check.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: The menu readability check. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "The menu readability check.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 4,
+        "date": "2026-11-17",
+        "platform": "LinkedIn",
+        "pillar": "Project-fit questions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "conversion",
+        "topic": "Why one logo is not a system",
+        "format": "Static educational post",
+        "hooks": [
+          "Why one logo is not a system.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Why one logo is not a system.",
+        "copy": "Why one logo is not a system.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Why one logo is not a system. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Why one logo is not a system.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 5,
+        "date": "2026-11-18",
+        "platform": "Instagram",
+        "pillar": "Opening-day decisions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "awareness",
+        "topic": "Define your opening-day priorities",
+        "format": "Static educational post",
+        "hooks": [
+          "Define your opening-day priorities.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Define your opening-day priorities.",
+        "copy": "Define your opening-day priorities.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Define your opening-day priorities. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Define your opening-day priorities.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 6,
+        "date": "2026-11-19",
+        "platform": "LinkedIn",
+        "pillar": "Design explained",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "nurture",
+        "topic": "A useful first enquiry",
+        "format": "Static educational post",
+        "hooks": [
+          "A useful first enquiry.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "A useful first enquiry.",
+        "copy": "A useful first enquiry.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: A useful first enquiry. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "A useful first enquiry.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 7,
+        "date": "2026-11-20",
+        "platform": "Instagram",
+        "pillar": "Working process",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "positioning",
+        "topic": "Choose a tone of voice",
+        "format": "Static educational post",
+        "hooks": [
+          "Choose a tone of voice.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Choose a tone of voice.",
+        "copy": "Choose a tone of voice.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Choose a tone of voice. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Choose a tone of voice.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 8,
+        "date": "2026-11-21",
+        "platform": "LinkedIn",
+        "pillar": "Project-fit questions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "conversion",
+        "topic": "Make signage easier to understand",
+        "format": "Static educational post",
+        "hooks": [
+          "Make signage easier to understand.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Make signage easier to understand.",
+        "copy": "Make signage easier to understand.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Make signage easier to understand. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Make signage easier to understand.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 9,
+        "date": "2026-11-22",
+        "platform": "Instagram",
+        "pillar": "Opening-day decisions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "awareness",
+        "topic": "How to collect useful references",
+        "format": "Static educational post",
+        "hooks": [
+          "How to collect useful references.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "How to collect useful references.",
+        "copy": "How to collect useful references.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: How to collect useful references. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "How to collect useful references.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 10,
+        "date": "2026-11-23",
+        "platform": "LinkedIn",
+        "pillar": "Design explained",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "nurture",
+        "topic": "What feedback helps a designer",
+        "format": "Static educational post",
+        "hooks": [
+          "What feedback helps a designer.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "What feedback helps a designer.",
+        "copy": "What feedback helps a designer.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: What feedback helps a designer. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "What feedback helps a designer.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 11,
+        "date": "2026-11-24",
+        "platform": "Instagram",
+        "pillar": "Working process",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "positioning",
+        "topic": "Separate preference from purpose",
+        "format": "Static educational post",
+        "hooks": [
+          "Separate preference from purpose.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Separate preference from purpose.",
+        "copy": "Separate preference from purpose.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Separate preference from purpose. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Separate preference from purpose.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 12,
+        "date": "2026-11-25",
+        "platform": "LinkedIn",
+        "pillar": "Project-fit questions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "conversion",
+        "topic": "Plan the touchpoints customers see",
+        "format": "Static educational post",
+        "hooks": [
+          "Plan the touchpoints customers see.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Plan the touchpoints customers see.",
+        "copy": "Plan the touchpoints customers see.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Plan the touchpoints customers see. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Plan the touchpoints customers see.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 13,
+        "date": "2026-11-26",
+        "platform": "Instagram",
+        "pillar": "Opening-day decisions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "awareness",
+        "topic": "What consistency actually means",
+        "format": "Static educational post",
+        "hooks": [
+          "What consistency actually means.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "What consistency actually means.",
+        "copy": "What consistency actually means.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: What consistency actually means. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "What consistency actually means.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 14,
+        "date": "2026-11-27",
+        "platform": "LinkedIn",
+        "pillar": "Design explained",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "nurture",
+        "topic": "Three questions before a rebrand",
+        "format": "Static educational post",
+        "hooks": [
+          "Three questions before a rebrand.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Three questions before a rebrand.",
+        "copy": "Three questions before a rebrand.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Three questions before a rebrand. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Three questions before a rebrand.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 15,
+        "date": "2026-11-28",
+        "platform": "Instagram",
+        "pillar": "Working process",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "positioning",
+        "topic": "Prepare your project assets",
+        "format": "Static educational post",
+        "hooks": [
+          "Prepare your project assets.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Prepare your project assets.",
+        "copy": "Prepare your project assets.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Prepare your project assets. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Prepare your project assets.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 16,
+        "date": "2026-11-29",
+        "platform": "LinkedIn",
+        "pillar": "Project-fit questions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "conversion",
+        "topic": "Make the next step clear",
+        "format": "Static educational post",
+        "hooks": [
+          "Make the next step clear.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Make the next step clear.",
+        "copy": "Make the next step clear.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Make the next step clear. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Make the next step clear.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 17,
+        "date": "2026-11-30",
+        "platform": "Instagram",
+        "pillar": "Opening-day decisions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "awareness",
+        "topic": "Test your message in plain language",
+        "format": "Static educational post",
+        "hooks": [
+          "Test your message in plain language.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Test your message in plain language.",
+        "copy": "Test your message in plain language.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Test your message in plain language. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Test your message in plain language.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 18,
+        "date": "2026-12-01",
+        "platform": "LinkedIn",
+        "pillar": "Design explained",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "nurture",
+        "topic": "Use proof responsibly",
+        "format": "Static educational post",
+        "hooks": [
+          "Use proof responsibly.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Use proof responsibly.",
+        "copy": "Use proof responsibly.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Use proof responsibly. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Use proof responsibly.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 19,
+        "date": "2026-12-02",
+        "platform": "Instagram",
+        "pillar": "Working process",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "positioning",
+        "topic": "The role of an opening headline",
+        "format": "Static educational post",
+        "hooks": [
+          "The role of an opening headline.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "The role of an opening headline.",
+        "copy": "The role of an opening headline.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: The role of an opening headline. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "The role of an opening headline.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 20,
+        "date": "2026-12-03",
+        "platform": "LinkedIn",
+        "pillar": "Project-fit questions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "conversion",
+        "topic": "A practical handover checklist",
+        "format": "Static educational post",
+        "hooks": [
+          "A practical handover checklist.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "A practical handover checklist.",
+        "copy": "A practical handover checklist.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: A practical handover checklist. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "A practical handover checklist.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 21,
+        "date": "2026-12-04",
+        "platform": "Instagram",
+        "pillar": "Opening-day decisions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "awareness",
+        "topic": "What belongs in a brand guide",
+        "format": "Static educational post",
+        "hooks": [
+          "What belongs in a brand guide.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "What belongs in a brand guide.",
+        "copy": "What belongs in a brand guide.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: What belongs in a brand guide. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "What belongs in a brand guide.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 22,
+        "date": "2026-12-05",
+        "platform": "LinkedIn",
+        "pillar": "Design explained",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "nurture",
+        "topic": "Set project decision ownership",
+        "format": "Static educational post",
+        "hooks": [
+          "Set project decision ownership.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Set project decision ownership.",
+        "copy": "Set project decision ownership.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Set project decision ownership. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Set project decision ownership.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 23,
+        "date": "2026-12-06",
+        "platform": "Instagram",
+        "pillar": "Working process",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "positioning",
+        "topic": "Build an accessible colour brief",
+        "format": "Static educational post",
+        "hooks": [
+          "Build an accessible colour brief.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Build an accessible colour brief.",
+        "copy": "Build an accessible colour brief.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Build an accessible colour brief. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Build an accessible colour brief.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 24,
+        "date": "2026-12-07",
+        "platform": "LinkedIn",
+        "pillar": "Project-fit questions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "conversion",
+        "topic": "Plan photography with a purpose",
+        "format": "Static educational post",
+        "hooks": [
+          "Plan photography with a purpose.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Plan photography with a purpose.",
+        "copy": "Plan photography with a purpose.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Plan photography with a purpose. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Plan photography with a purpose.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 25,
+        "date": "2026-12-08",
+        "platform": "Instagram",
+        "pillar": "Opening-day decisions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "awareness",
+        "topic": "Explain your offer before decorating it",
+        "format": "Static educational post",
+        "hooks": [
+          "Explain your offer before decorating it.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Explain your offer before decorating it.",
+        "copy": "Explain your offer before decorating it.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Explain your offer before decorating it. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Explain your offer before decorating it.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 26,
+        "date": "2026-12-09",
+        "platform": "LinkedIn",
+        "pillar": "Design explained",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "nurture",
+        "topic": "Review a customer journey",
+        "format": "Static educational post",
+        "hooks": [
+          "Review a customer journey.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Review a customer journey.",
+        "copy": "Review a customer journey.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Review a customer journey. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Review a customer journey.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 27,
+        "date": "2026-12-10",
+        "platform": "Instagram",
+        "pillar": "Working process",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "positioning",
+        "topic": "Scope a small first improvement",
+        "format": "Static educational post",
+        "hooks": [
+          "Scope a small first improvement.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Scope a small first improvement.",
+        "copy": "Scope a small first improvement.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Scope a small first improvement. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Scope a small first improvement.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 28,
+        "date": "2026-12-11",
+        "platform": "LinkedIn",
+        "pillar": "Project-fit questions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "conversion",
+        "topic": "Ask better customer questions",
+        "format": "Static educational post",
+        "hooks": [
+          "Ask better customer questions.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Ask better customer questions.",
+        "copy": "Ask better customer questions.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Ask better customer questions. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Ask better customer questions.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 29,
+        "date": "2026-12-12",
+        "platform": "Instagram",
+        "pillar": "Opening-day decisions",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "awareness",
+        "topic": "Measure the right enquiries",
+        "format": "Static educational post",
+        "hooks": [
+          "Measure the right enquiries.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Measure the right enquiries.",
+        "copy": "Measure the right enquiries.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Measure the right enquiries. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Measure the right enquiries.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      },
+      {
+        "day": 30,
+        "date": "2026-12-13",
+        "platform": "LinkedIn",
+        "pillar": "Design explained",
+        "buyerPersona": "Independent hospitality founder \u2014 illustrative hypothesis",
+        "funnelStage": "nurture",
+        "topic": "Review and prioritise next month",
+        "format": "Static educational post",
+        "hooks": [
+          "Review and prioritise next month.",
+          "Which customer question does this decision answer?",
+          "Before choosing a design, define its job."
+        ],
+        "selectedHook": "Review and prioritise next month.",
+        "copy": "Review and prioritise next month.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "creativeInstructions": "Illustrative sample: a simple editorial graphic. Headline: Review and prioritise next month. Subheadline: Give the decision a clear customer purpose. Use an approved brand palette, generous spacing and one genuine example. Do not invent client results.",
+        "caption": "Review and prioritise next month.\n\nBefore making a design choice, write down the customer task it should support. Is someone trying to understand the offer, compare options or find the next step?\n\nChoose one real example from your business. Read it as a first-time visitor, note what is clear and list the questions it leaves unanswered. Use those questions to guide the next revision.\n\nA useful decision has a purpose you can explain. What would you make clearer first?",
+        "cta": "Save this question for your next planning session.",
+        "link": "Needs Client Confirmation",
+        "hashtags": [],
+        "requiredAssets": [
+          "Approved brand fonts and colours",
+          "A genuine business example cleared for publication"
+        ],
+        "kpi": "Relevant questions and saves, where analytics are available",
+        "status": "DRAFT \u2014 NEEDS APPROVAL",
+        "confirmationNeeded": [
+          "This sample is fictional and has not been tailored through live research.",
+          "Confirm the actual offer, target market, audience and production capacity."
+        ]
+      }
+    ]
+  }
+}
