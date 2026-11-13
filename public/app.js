@@ -163,16 +163,14 @@ function fillClient(){
  const p=clients.find(x=>x.id===$('client-select').value);
  $('client-name').value=p?.name||'';$('client-voice').value=p?.voice||'';
  $('client-audience').value=p?.audience||'';$('client-approved').value=p?.approvedContext||'';
- if(p){
-   const links=p.links||[];
-   for(const [id,label] of [['url','Website'],['instagram','Instagram'],['facebook','Facebook'],['linkedin','LinkedIn'],['other','Other social profile']]){
-     $(id).value=links.find(x=>x.label===label)?.url||'';
-   }
-   $('region').value=p.region||'';
-   if(p.objective && [...$('objective').options].some(x=>x.value===p.objective))$('objective').value=p.objective;
-   $('notes').value=p.notes||'';
-   if(current)clearReport();
+ const links=p?.links||[];
+ for(const [id,label] of [['url','Website'],['instagram','Instagram'],['facebook','Facebook'],['linkedin','LinkedIn'],['other','Other social profile']]){
+   $(id).value=links.find(x=>x.label===label)?.url||'';
  }
+ $('region').value=p?.region||'';
+ $('objective').value=p?.objective&&[...$('objective').options].some(x=>x.value===p.objective)?p.objective:$('objective').options[0].value;
+ $('notes').value=p?.notes||'';
+ if(current)clearReport();
  refreshHistory().catch(error=>$('workspace-message').textContent=error.message);
 }
 async function refreshHistory(){
