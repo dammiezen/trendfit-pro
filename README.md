@@ -12,6 +12,16 @@ It flags unknown information, uses the updated weighted trend score out of 100, 
 
 The original calculator is preserved at `/calculator.html`. It is a legacy manual tool with the former 25-point scoring system, separate from the new audit workflow.
 
+## Persistent client workspace (feature branch)
+
+After unlocking, create a client profile with links, region, audience, voice and approved context. Selecting the client before an audit automatically includes its saved brand rules. Completed audit reports can be reopened from audit history. Edit individual calendar days and mark their status manually (Draft, Needs Client Confirmation, In Review, Approved, Scheduled or Published). Statuses do not imply a scheduler or verified publishing.
+
+The private store lives at `DATA_DIR/workspace.json` (default `.data/workspace.json`) and uses atomic file replacement. Mount a **persistent private disk/volume** when hosting: ephemeral host filesystems may be erased on deployment. Back up the directory securely. It contains potentially confidential brand context and reports, is not encrypted at rest and does not have automatic backups. It must never be committed or exposed as a static asset.
+
+**Single operator and single Node process only.** Multiple workers sharing the JSON store are unsupported. Old reports already lost from volatile memory cannot be recovered. Deleting a client detaches audit history; deleting an audit permanently removes its saved report/calendar. Completed saved reports persist until deleted; the 30-minute expiry still applies to temporary in-memory jobs.
+
+No automatic posting, social integration, analytics, or real-time trend verification is added by this storage feature. The existing GitHub Pages calculator remains unchanged.
+
 ## Before activation
 
 You need:
