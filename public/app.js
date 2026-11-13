@@ -1,5 +1,6 @@
 const $=id=>document.getElementById(id);
 let current=null, busy=false, ready=false, authenticated=false;
+let clients=[];
 const node=(tag,text,className)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;};
 function list(items){const ul=node('ul',undefined,'list');items.forEach(x=>ul.append(node('li',x)));return ul;}
 function section(title,items){const c=node('section',undefined,'card');c.append(node('h3',title),list(items));return c;}
@@ -34,7 +35,35 @@ function render(data){
   $('content').append(node('p','30 dated drafts — not approved, scheduled or published. Verify claims, destinations, voice, current trends and production capacity before approval.','notice'));
   const tableWrap=node('div',undefined,'card table-wrap');tableWrap.append(node('h3','30-day content calendar'));
   const table=node('table',undefined,'calendar'),thead=node('thead'),tr=node('tr');['Date','Topic / platform','Funnel job','Status'].forEach(x=>tr.append(node('th',x)));thead.append(tr);table.append(thead);const tbody=node('tbody');r.calendar.forEach(d=>{const row=node('tr');[d.date,d.topic+' · '+d.platform,d.funnelStage,d.status].forEach(v=>row.append(node('td',v)));tbody.append(row);});table.append(tbody);tableWrap.append(table);$('content').append(tableWrap);
-  r.calendar.forEach(d=>{const c=node('details',undefined,'module calendar-entry');const heading=node('summary');heading.append(node('span','Day '+d.day+' · '+d.date+' — '+d.topic),node('span',d.format,'status'));c.append(heading);pill(c,[d.platform,d.funnelStage,d.pillar,d.status]);para(c,'Target buyer',d.buyerPersona);c.append(node('h4','Hook options','subhead'),list(d.hooks));para(c,'Selected hook',d.selectedHook);para(c,'Full content copy',d.copy);para(c,'Creative and production instructions',d.creativeInstructions);para(c,'Caption',d.caption);para(c,'CTA',d.cta);para(c,'Destination',d.link);para(c,'Hashtags',d.hashtags.join(' '));c.append(node('h4','Required assets','subhead'),list(d.requiredAssets));para(c,'Primary KPI',d.kpi);c.append(node('h4','Needs client confirmation','subhead'),list(d.confirmationNeeded));$('content').append(c);});
+  r.calendar.forEach(d=>{const c=node('details',undefined,'module calendar-entry');const heading=node('summary');heading.append(node('span','Day '+d.day+' · '+d.date+' — '+d.topic),node('span',d.format,'status'));c.append(heading);pill(c,[d.platform,d.funnelStage,d.pillar,d.status]);para(c,'Target buyer',d.buyerPersona);c.append(node('h4','Hook options','subhead'),list(d.hooks));para(c,'Selected hook',d.selectedHook);para(c,'Full content copy',d.copy);para(c,'Creative and production instructions',d.creativeInstructions);para(c,'Caption',d.caption);para(c,'CTA',d.cta);para(c,'Destination',d.link);para(c,'Hashtags',d.hashtags.join(' '));c.append(node('h4','Required assets','subhead'),list(d.requiredAssets));para(c,'Primary KPI',d.kpi);c.append(node('h4','Needs client confirmation','subhead'),list(d.confirmationNeeded));
+  if(!data.demo && data.savedAuditId){
+    const edit=node('div',undefined,'calendar-edit');edit.append(node('h4',"Edit and save this day's draft"));
+    const field=(name,value,multi=false)=>{
+      const label=node('label',name), control=node(multi?'textarea':'input');
+      control.value=value||'';if(multi)control.rows=4;else control.type='text';
+      label.append(control);edit.append(label);return control;
+    };
+    const caption=field('Caption',d.caption,true),copy=field('Full content copy',d.copy,true),
+      creative=field('Creative instructions',d.creativeInstructions,true),cta=field('CTA',d.cta),
+      destination=field('Destination',d.link),topic=field('Topic',d.topic);
+    const status=node('select');['Draft','Needs Client Confirmation','In Review','Approved','Scheduled','Published'].forEach(x=>{const option=node('option',x);option.value=x;status.append(option);});
+    status.value=['Draft','Needs Client Confirmation','In Review','Approved','Scheduled','Published'].includes(d.status)?d.status:'Draft';
+    const statusLabel=node('label','Workflow status');statusLabel.append(status);edit.append(statusLabel);
+    const save=node('button','Save calendar changes','button');save.type='button';edit.append(save);
+    const message=node('p','','hint');edit.append(message);
+    save.onclick=async()=>{
+      save.disabled=true;message.textContent='';
+      try{
+        const updated=await workspaceRequest('history/'+data.savedAuditId+'/calendar/'+d.day,'PATCH',{
+          caption:caption.value,copy:copy.value,creativeInstructions:creative.value,
+          cta:cta.value,link:destination.value,topic:topic.value,status:status.value
+        });
+        Object.assign(d,updated.day);message.textContent='Saved. Reopen the audit to refresh the full report.';
+      }catch(error){message.textContent=error.message;}finally{save.disabled=false;}
+    };
+    c.append(edit);
+  }
+  $('content').append(c);});
   if(r.competitors?.length){const c=node('section',undefined,'card');c.append(node('h3','Competitor evidence'));r.competitors.forEach(x=>{const a=node('article',undefined,'finding');a.append(node('h4',x.name),link(x.url,x.url));for(const key of ['positioning','audience','offer','content','proof','cta','differentiators','opportunity','limitations'])para(a,key,x[key]);c.append(a);});$('strategy').append(c);}
   $('evidence').append(section('Scope and limitations',data.limitations));
   const cov=node('section',undefined,'card');cov.append(node('h3','Access coverage'));cov.append(list(data.coverage.map(c=>c.status.toUpperCase()+' · '+c.url+'\n'+c.detail)));$('evidence').append(cov);
@@ -45,16 +74,16 @@ function render(data){
 function showError(message,coverage=[]){$('error').textContent=message+(coverage.length?'\n\n'+coverage.map(c=>c.url+' — '+c.detail).join('\n'):'');$('error').hidden=false;}
 function setBusy(value){busy=value;$('progress').hidden=!value;$('run').disabled=value||!ready||!authenticated;$('sample').disabled=value;$('audit-form').querySelectorAll('input,select,textarea,details').forEach(el=>{if('disabled' in el)el.disabled=value;});$('run').textContent=value?'Preparing your audit…':'Audit this brand ↗';}
 async function api(path,body){const response=await fetch('api/'+path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(300000)});let data;try{data=await response.json();}catch{throw new Error('The private audit service is unavailable. Follow the setup guide to start it.');}if(!response.ok){const e=new Error(data.error||'Something went wrong.');e.coverage=data.coverage;e.status=response.status;throw e;}return data;}
-async function status(){try{const s=await api('status');ready=s.ready;authenticated=s.authenticated;}catch{ready=false;authenticated=false;}$('setup').hidden=ready;$('unlock').hidden=!ready||authenticated;$('logout').hidden=!authenticated;$('connection').textContent=!ready?'Setup required':authenticated?'● Workspace unlocked':'● Private workspace';$('run').disabled=!ready||!authenticated||busy;}
+async function status(){try{const s=await api('status');ready=s.ready;authenticated=s.authenticated;}catch{ready=false;authenticated=false;}$('workspace').hidden=!authenticated;if(authenticated)loadWorkspace().catch(error=>$('workspace-message').textContent=error.message);$('setup').hidden=ready;$('unlock').hidden=!ready||authenticated;$('logout').hidden=!authenticated;$('connection').textContent=!ready?'Setup required':authenticated?'● Workspace unlocked':'● Private workspace';$('run').disabled=!ready||!authenticated||busy;}
 $('login-form').onsubmit=async e=>{e.preventDefault();$('login-message').textContent='';try{await api('login',{password:$('password').value});$('password').value='';await status();}catch(error){$('login-message').textContent=error.message;}};
 $('logout').onclick=async()=>{try{await api('logout',{});clearReport();await status();}catch(error){showError(error.message);}};
 $('audit-form').onsubmit=async e=>{e.preventDefault();if(busy||!ready||!authenticated)return;
   const links=[['url','Website'],['instagram','Instagram'],['facebook','Facebook'],['linkedin','LinkedIn'],['other','Other social profile']].filter(([id])=>$(id).value.trim()).map(([id,label])=>({label,url:$(id).value.trim()}));
   if(!links.length){showError('Add at least one official website or social profile.');$('url').focus();return;}
   clearReport();$('error').hidden=true;setBusy(true);
-  try{const started=await api('audit',{links,objective:$('objective').value,region:$('region').value.trim()||'Not supplied — research and confirm',notes:$('notes').value.trim(),startDate:$('start-date').value,consent:$('consent').checked});
+  try{const started=await api('audit',{links,objective:$('objective').value,region:$('region').value.trim()||'Not supplied — research and confirm',notes:[$('notes').value.trim(),...selectedClientContext()].filter(Boolean).join('\n\n').slice(0,20000),startDate:$('start-date').value,consent:$('consent').checked,clientId:$('client-select').value||null});
     const deadline=Date.now()+40*60000;
-    while(Date.now()<deadline){const job=await api('audit/'+started.id);$('progress-title').textContent=job.stage||'Preparing your audit';if(job.state==='complete'){render(job.result);return;}if(job.state==='failed'){const error=new Error(job.error);error.coverage=job.coverage;throw error;}await new Promise(resolve=>setTimeout(resolve,2500));}
+    while(Date.now()<deadline){const job=await api('audit/'+started.id);$('progress-title').textContent=job.stage||'Preparing your audit';if(job.state==='complete'){render(job.result);loadWorkspace().catch(()=>{});return;}if(job.state==='failed'){const error=new Error(job.error);error.coverage=job.coverage;throw error;}await new Promise(resolve=>setTimeout(resolve,2500));}
     throw new Error('The audit has exceeded the waiting limit. Ask the app owner to check the service before retrying.');
   }catch(error){showError(error.name==='TimeoutError'?'The connection timed out. The audit may still be finishing; check the service before retrying.':error.message,error.coverage);if(error.status===401)await status();}finally{setBusy(false);}
 };
@@ -81,4 +110,70 @@ let beforePrint=[];
 window.addEventListener('beforeprint',()=>{beforePrint=[...document.querySelectorAll('#results details')].map(d=>[d,d.open]);beforePrint.forEach(([d])=>d.open=true);});
 window.addEventListener('afterprint',()=>beforePrint.forEach(([d,open])=>d.open=open));
 $('print').onclick=()=>window.print();
+
+function selectedClientContext(){
+ const p=clients.find(x=>x.id===$('client-select').value);
+ if(!p)return [];
+ return [p.voice&&'Brand voice rules: '+p.voice,p.audience&&'Target audience: '+p.audience,p.approvedContext&&'Client-approved context (verify currency before use): '+p.approvedContext].filter(Boolean);
+}
+async function workspaceRequest(path,method='GET',body){
+ const response=await fetch('api/'+path,{method,headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined});
+ if(response.status===204)return {};
+ const data=await response.json().catch(()=>({error:'Unexpected server response'}));
+ if(!response.ok)throw new Error(data.error||'Unable to update workspace');
+ return data;
+}
+function fillClient(){
+ const p=clients.find(x=>x.id===$('client-select').value);
+ $('client-name').value=p?.name||'';$('client-voice').value=p?.voice||'';
+ $('client-audience').value=p?.audience||'';$('client-approved').value=p?.approvedContext||'';
+ if(p){
+   const links=p.links||[];
+   for(const [id,label] of [['url','Website'],['instagram','Instagram'],['facebook','Facebook'],['linkedin','LinkedIn'],['other','Other social profile']]){
+     $(id).value=links.find(x=>x.label===label)?.url||'';
+   }
+   $('region').value=p.region||'';
+   if(p.objective && [...$('objective').options].some(x=>x.value===p.objective))$('objective').value=p.objective;
+   $('notes').value=p.notes||'';
+   if(current)clearReport();
+ }
+ refreshHistory().catch(error=>$('workspace-message').textContent=error.message);
+}
+async function refreshHistory(){
+ const clientId=$('client-select').value;
+ const data=await workspaceRequest('history'+(clientId?'?clientId='+encodeURIComponent(clientId):''));
+ const menu=$('history-select');menu.replaceChildren(new Option('Choose a previous audit',''));
+ for(const a of data.audits)menu.add(new Option(a.brandName+' · '+new Date(a.createdAt).toLocaleString()+' · '+a.days+' days',a.id));
+}
+async function loadWorkspace(){
+ const selected=$('client-select').value;
+ const data=await workspaceRequest('clients');clients=data.clients;
+ const menu=$('client-select');menu.replaceChildren(new Option('New / unsaved client',''));
+ for(const p of clients)menu.add(new Option(p.name,p.id));
+ if(clients.some(x=>x.id===selected))menu.value=selected;
+ await refreshHistory();
+}
+$('client-select').onchange=fillClient;
+$('refresh-workspace').onclick=()=>loadWorkspace().catch(error=>$('workspace-message').textContent=error.message);
+$('new-client').onclick=()=>{$('client-select').value='';fillClient();$('client-name').focus();};
+$('save-client').onclick=async()=>{
+ const id=$('client-select').value;
+ const links=[['url','Website'],['instagram','Instagram'],['facebook','Facebook'],['linkedin','LinkedIn'],['other','Other social profile']].filter(([x])=>$(x).value.trim()).map(([x,label])=>({label,url:$(x).value.trim()}));
+ const payload={name:$('client-name').value,links,objective:$('objective').value,region:$('region').value,notes:$('notes').value,voice:$('client-voice').value,audience:$('client-audience').value,approvedContext:$('client-approved').value};
+ try{const response=await workspaceRequest(id?'clients/'+id:'clients',id?'PUT':'POST',payload);await loadWorkspace();$('client-select').value=response.client.id;$('workspace-message').textContent='Client profile saved.';await refreshHistory();}
+ catch(error){$('workspace-message').textContent=error.message;}
+};
+$('delete-client').onclick=async()=>{
+ const id=$('client-select').value;if(!id||!confirm('Delete this profile? Existing audits remain in history.'))return;
+ try{await workspaceRequest('clients/'+id,'DELETE');$('client-select').value='';await loadWorkspace();fillClient();$('workspace-message').textContent='Profile deleted; audit history preserved.';}catch(error){$('workspace-message').textContent=error.message;}
+};
+$('open-history').onclick=async()=>{
+ if(!$('history-select').value)return;
+ try{const a=await workspaceRequest('history/'+$('history-select').value);a.result.savedAuditId=a.id;render(a.result);$('workspace-message').textContent='Loaded saved audit.';}catch(error){$('workspace-message').textContent=error.message;}
+};
+$('delete-history').onclick=async()=>{
+ const id=$('history-select').value;if(!id||!confirm('Permanently delete this saved audit and calendar?'))return;
+ try{await workspaceRequest('history/'+id,'DELETE');if(current?.savedAuditId===id)clearReport();await refreshHistory();$('workspace-message').textContent='Audit deleted.';}catch(error){$('workspace-message').textContent=error.message;}
+};
+
 status();
