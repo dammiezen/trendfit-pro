@@ -117,7 +117,7 @@ A generated report still needs human review. “Needs Client Confirmation” is 
 
 ## Data handling and access
 
-The API key remains on the server. The password creates an HTTP-only, same-site session cookie. Audit jobs are readable only by their initiating session. Completed reports expire from server memory after 30 minutes (cleanup runs once a minute); the browser keeps its displayed report until cleared or closed. Restarting the service loses sessions and jobs. No report files or client context are written to disk by the app.
+The API key remains on the server. The password creates an HTTP-only, same-site session cookie. Audit jobs are readable only by their initiating session. Completed reports expire from server memory after 30 minutes (cleanup runs once a minute); the browser keeps its displayed report until cleared or closed. Restarting the service loses sessions and jobs. Completed audit reports and saved client profiles are written to the private configured data directory.
 
 The API requests use `store: false`; this is not a promise of zero retention by the AI provider. Review the provider's account-specific data policies. Do not submit confidential customer records or credentials. The app asks for acknowledgement before sending content to the AI service.
 
