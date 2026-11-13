@@ -1,0 +1,21 @@
+{
+  "name": "trendfit-pro",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "test": "node --test test/*.test.js",
+    "check": "node --check server/index.js && node --check public/app.js"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "cheerio": "^1.2.0",
+    "express": "^5.3.0",
+    "ipaddr.js": "^2.5.0",
+    "robots-parser": "^3.0.1"
+  }
+}
