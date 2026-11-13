@@ -34,7 +34,43 @@ function render(data){
   r.actions.forEach((a,i)=>{const c=node('article',undefined,'card');const head=node('div',undefined,'action-head');const text=node('div');text.append(node('h3',a.title),node('p',a.why,'body-text'));head.append(node('span',String(i+1).padStart(2,'0'),'number'),text);c.append(head);pill(c,[a.timing,'Suggested owner: '+a.owner]);c.append(list(a.steps));para(c,'Measure',a.kpi);para(c,'Depends on',a.dependency);$('actions').append(c);});
   $('content').append(node('p','30 dated drafts — not approved, scheduled or published. Verify claims, destinations, voice, current trends and production capacity before approval.','notice'));
   const tableWrap=node('div',undefined,'card table-wrap');tableWrap.append(node('h3','30-day content calendar'));
-  const table=node('table',undefined,'calendar'),thead=node('thead'),tr=node('tr');['Date','Topic / platform','Funnel job','Status'].forEach(x=>tr.append(node('th',x)));thead.append(tr);table.append(thead);const tbody=node('tbody');r.calendar.forEach(d=>{const row=node('tr');[d.date,d.topic+' · '+d.platform,d.funnelStage,d.status].forEach(v=>row.append(node('td',v)));tbody.append(row);});table.append(tbody);tableWrap.append(table);$('content').append(tableWrap);
+  const filters=node('div',undefined,'calendar-filters');
+  const makeFilter=(title,values)=>{
+    const label=node('label',title),select=node('select');
+    select.add(new Option('All '+title.toLowerCase(),''));
+    [...new Set(values.filter(Boolean))].sort().forEach(v=>select.add(new Option(v,v)));
+    label.append(select);filters.append(label);return select;
+  };
+  const platformFilter=makeFilter('Platforms',r.calendar.map(d=>d.platform));
+  const formatFilter=makeFilter('Formats',r.calendar.map(d=>d.format));
+  const stageFilter=makeFilter('Funnel stages',r.calendar.map(d=>d.funnelStage));
+  const query=node('input');query.type='search';query.placeholder='Search topics, captions and hooks';
+  const searchLabel=node('label','Search drafts');searchLabel.append(query);filters.append(searchLabel);
+  const exportCsv=node('button','Export calendar CSV','quiet');exportCsv.type='button';filters.append(exportCsv);
+  tableWrap.append(filters);
+  const table=node('table',undefined,'calendar'),thead=node('thead'),tr=node('tr');
+  ['Date','Topic / platform','Format','Funnel job','Status'].forEach(x=>tr.append(node('th',x)));
+  thead.append(tr);table.append(thead);const tbody=node('tbody');table.append(tbody);
+  const filtered=()=>r.calendar.filter(d=>
+    (!platformFilter.value||d.platform===platformFilter.value)&&
+    (!formatFilter.value||d.format===formatFilter.value)&&
+    (!stageFilter.value||d.funnelStage===stageFilter.value)&&
+    (!query.value||[d.topic,d.caption,d.selectedHook].join(' ').toLowerCase().includes(query.value.toLowerCase()))
+  );
+  const drawRows=()=>{tbody.replaceChildren();for(const d of filtered()){
+    const row=node('tr');[d.date,d.topic+' · '+d.platform,d.format,d.funnelStage,d.status].forEach(v=>row.append(node('td',v)));
+    tbody.append(row);
+  }};
+  [platformFilter,formatFilter,stageFilter,query].forEach(el=>el.addEventListener('input',drawRows));drawRows();
+  exportCsv.onclick=()=>{
+    const cols=['date','day','platform','format','topic','funnelStage','pillar','selectedHook','caption','copy','creativeInstructions','cta','link','status'];
+    const csvValue=value=>'"'+String(value??'').replaceAll('"','""')+'"';
+    const csv=[cols.map(csvValue).join(','),...filtered().map(d=>cols.map(k=>csvValue(d[k])).join(','))].join('\r\n');
+    const url=URL.createObjectURL(new Blob(['\ufeff',csv],{type:'text/csv;charset=utf-8'}));
+    const a=node('a');a.href=url;a.download='trendfit-calendar-'+(data.startDate||'draft')+'.csv';
+    document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  };
+  tableWrap.append(table);$('content').append(tableWrap);
   r.calendar.forEach(d=>{const c=node('details',undefined,'module calendar-entry');const heading=node('summary');heading.append(node('span','Day '+d.day+' · '+d.date+' — '+d.topic),node('span',d.format,'status'));c.append(heading);pill(c,[d.platform,d.funnelStage,d.pillar,d.status]);para(c,'Target buyer',d.buyerPersona);c.append(node('h4','Hook options','subhead'),list(d.hooks));para(c,'Selected hook',d.selectedHook);para(c,'Full content copy',d.copy);para(c,'Creative and production instructions',d.creativeInstructions);para(c,'Caption',d.caption);para(c,'CTA',d.cta);para(c,'Destination',d.link);para(c,'Hashtags',d.hashtags.join(' '));c.append(node('h4','Required assets','subhead'),list(d.requiredAssets));para(c,'Primary KPI',d.kpi);c.append(node('h4','Needs client confirmation','subhead'),list(d.confirmationNeeded));
   if(!data.demo && data.savedAuditId){
     const edit=node('div',undefined,'calendar-edit');edit.append(node('h4',"Edit and save this day's draft"));
