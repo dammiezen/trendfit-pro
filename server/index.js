@@ -4,9 +4,11 @@ import {fileURLToPath} from 'node:url';
 import {audit} from './audit.js';
 import {validateUrl} from './crawl.js';
 import {skillHash} from './workflow.js';
+import {createStore} from './store.js';
 
 export function createApp(config = {}, runAudit=audit) {
   const app=express();
+  const store=config.store||createStore(config.dataDir);
   const sessions=new Map(), limits=new Map(), jobs=new Map(); let running=0;
   const cleanup=setInterval(()=>{for(const [id,j] of jobs)if(j.expires<Date.now())jobs.delete(id);},60000);cleanup.unref();
   const ready=Boolean(config.key && config.password && config.model);
@@ -42,6 +44,36 @@ export function createApp(config = {}, runAudit=audit) {
     res.set('Set-Cookie',`tf_session=${id}; HttpOnly; SameSite=Strict; Path=/; Max-Age=28800${config.production?'; Secure':''}`).json({ok:true});
   });
   app.post('/api/logout',(req,res)=>{sessions.delete(token(req));res.set('Set-Cookie','tf_session=; HttpOnly; SameSite=Strict; Path=/; Max-Age=0').json({ok:true});});
+
+  // Every workspace operation uses the same HTTP-only session as the audit service.
+  app.use('/api/clients',(req,res,next)=>{if(!loggedIn(req))return res.status(401).json({error:'Unlock the workspace first.'});next();});
+  app.use('/api/history',(req,res,next)=>{if(!loggedIn(req))return res.status(401).json({error:'Unlock the workspace first.'});next();});
+  app.get('/api/clients',(req,res)=>res.json({clients:store.profiles()}));
+  app.post('/api/clients',(req,res)=>{
+    try{res.status(201).json({client:store.upsertProfile(req.body)});}catch(e){res.status(400).json({error:e.message});}
+  });
+  app.put('/api/clients/:id',(req,res)=>{
+    try{res.json({client:store.upsertProfile(req.body,req.params.id)});}catch(e){res.status(400).json({error:e.message});}
+  });
+  app.delete('/api/clients/:id',(req,res)=>res.status(store.removeProfile(req.params.id)?204:404).end());
+  app.get('/api/history',(req,res)=>{
+    const profileId=typeof req.query.clientId==='string'?req.query.clientId:null;
+    res.json({audits:store.listAudits(profileId)});
+  });
+  app.get('/api/history/:id',(req,res)=>{
+    const entry=store.getAudit(req.params.id);
+    if(!entry)return res.status(404).json({error:'Saved audit not found.'});
+    res.json(entry);
+  });
+  app.patch('/api/history/:id/calendar/:day',(req,res)=>{
+    try{
+      const day=Number(req.params.day);
+      if(!Number.isInteger(day)||day<1||day>30)return res.status(400).json({error:'Invalid calendar day.'});
+      res.json({day:store.updateDay(req.params.id,day,req.body)});
+    }catch(e){res.status(e.message.includes('not found')?404:400).json({error:e.message});}
+  });
+  app.delete('/api/history/:id',(req,res)=>res.status(store.removeAudit(req.params.id)?204:404).end());
+
   app.get('/api/audit/:id',(req,res)=>{
     const session=loggedIn(req),job=jobs.get(req.params.id);
     if(!session)return res.status(401).json({error:'Your workspace session expired. Unlock and start again.'});
@@ -52,6 +84,8 @@ export function createApp(config = {}, runAudit=audit) {
     if(!ready)return res.status(503).json({error:'Automatic auditing is not configured yet. The setup guide explains how to activate it.'});
     const session=loggedIn(req);if(!session)return res.status(401).json({error:'Unlock the workspace before running an audit.'});
     const input=req.body;
+    const profileId=input?.clientId||null;
+    if(profileId && (!/^[0-9a-f-]{36}$/i.test(profileId)||!store.getProfile(profileId)))return res.status(400).json({error:'Select a saved client profile.'});
     if(!input || !Array.isArray(input.links) || !input.links.length || input.links.length>6 || typeof input.notes!=='string' || input.notes.length>20000 || typeof input.objective!=='string' || input.objective.length>500 || typeof input.region!=='string' || input.region.length>120 || input.consent!==true || typeof input.startDate!=='string' || !/^\d{4}-\d{2}-\d{2}$/.test(input.startDate) || !Number.isFinite(Date.parse(input.startDate+'T12:00:00Z')) || new Date(input.startDate+'T12:00:00Z').toISOString().slice(0,10)!==input.startDate)return res.status(400).json({error:'Check the links, start date, context fields and analysis consent.'});
     try{for(const item of input.links){if(!item||typeof item.label!=='string'||item.label.length>40||typeof item.url!=='string')throw new Error('Check the supplied links.');item.url=validateUrl(item.url).href;}}catch(error){return res.status(400).json({error:error.message});}
     if(running>=2)return res.status(429).json({error:'Two audits are already running. Please try again shortly.'});
@@ -59,7 +93,12 @@ export function createApp(config = {}, runAudit=audit) {
     const id=randomBytes(24).toString('hex');
     const job={session,state:'running',stage:'Starting /audit',expires:Date.now()+45*60000};jobs.set(id,job);running++;
     res.status(202).json({id,state:job.state});
-    try{job.result=await runAudit(input,config,{},stage=>job.stage=stage);job.state='complete';job.stage='Audit and 30-day plan ready';}
+    try{
+      job.result=await runAudit(input,config,{},stage=>job.stage=stage);
+      const saved=store.addAudit(profileId,job.result);
+      job.result.savedAuditId=saved.id;
+      job.state='complete';job.stage='Audit and 30-day plan saved';
+    }
     catch(error){job.state='failed';job.error=error.message;job.coverage=error.coverage||[];}
     finally{job.expires=Date.now()+30*60000;running--;}
   });
@@ -68,7 +107,7 @@ export function createApp(config = {}, runAudit=audit) {
   return app;
 }
 if(process.argv[1]===fileURLToPath(import.meta.url)) {
-  const config={key:process.env.OPENAI_API_KEY,password:process.env.AUDIT_PASSWORD,model:process.env.OPENAI_MODEL||'gpt-6-astra',origin:process.env.APP_ORIGIN,production:process.env.NODE_ENV==='production'};
+  const config={key:process.env.OPENAI_API_KEY,password:process.env.AUDIT_PASSWORD,model:process.env.OPENAI_MODEL||'gpt-6-astra',origin:process.env.APP_ORIGIN,production:process.env.NODE_ENV==='production',dataDir:process.env.DATA_DIR||'.data'};
   if(config.production && (!config.origin?.startsWith('https://') || !config.password || config.password.length<20))throw new Error('Production requires APP_ORIGIN with HTTPS and an AUDIT_PASSWORD of at least 20 characters.');
   const server=createApp(config).listen(Number(process.env.PORT||3000),()=>console.log('TrendFit Pro listening on port '+(process.env.PORT||3000)));
   server.requestTimeout=300000;

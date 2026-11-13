@@ -46,7 +46,7 @@ export async function audit(input,config,dependencies={},progress=()=>{}) {
     'Public text audit only: no visual/mobile rendering, technical speed test, form submission, image inspection or video viewing was performed.',
     'No account analytics or scheduling systems are connected. Reach, saves, retention, leads, sales and scheduled content remain unverified unless provided as client context.',
     'The 30-day calendar proposes one draft per day for review, not an approved publishing frequency. Production capacity and timing need client confirmation.',
-    'No accounts are changed. No content is published or scheduled. Reports and temporary jobs are kept in server memory for up to 30 minutes; exported reports are under your control.'
+    'No accounts are changed. No content is published or scheduled. Active jobs remain in server memory temporarily; completed audit reports are saved privately to the configured server data directory until deleted.'
   ];
   progress('Reading supplied website and social links');
   // Read each supplied profile independently. Never infer successful access from another profile.

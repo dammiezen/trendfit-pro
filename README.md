@@ -12,6 +12,16 @@ It flags unknown information, uses the updated weighted trend score out of 100, 
 
 The original calculator is preserved at `/calculator.html`. It is a legacy manual tool with the former 25-point scoring system, separate from the new audit workflow.
 
+## Persistent client workspace (feature branch)
+
+After unlocking, create a client profile with links, region, audience, voice and approved context. Selecting the client before an audit automatically includes its saved brand rules. Completed audit reports can be reopened from audit history. Edit individual calendar days and mark their status manually (Draft, Needs Client Confirmation, In Review, Approved, Scheduled or Published). Statuses do not imply a scheduler or verified publishing.
+
+The private store lives at `DATA_DIR/workspace.json` (default `.data/workspace.json`) and uses atomic file replacement. Mount a **persistent private disk/volume** when hosting: ephemeral host filesystems may be erased on deployment. Back up the directory securely. It contains potentially confidential brand context and reports, is not encrypted at rest and does not have automatic backups. It must never be committed or exposed as a static asset.
+
+**Single operator and single Node process only.** Multiple workers sharing the JSON store are unsupported. Old reports already lost from volatile memory cannot be recovered. Deleting a client detaches audit history; deleting an audit permanently removes its saved report/calendar. Completed saved reports persist until deleted; the 30-minute expiry still applies to temporary in-memory jobs.
+
+No automatic posting, social integration, analytics, or real-time trend verification is added by this storage feature. The existing GitHub Pages calculator remains unchanged.
+
 ## Before activation
 
 You need:
@@ -101,13 +111,13 @@ A generated report still needs human review. “Needs Client Confirmation” is 
 - Public research uses the OpenAI web-search tool and citations. Its excerpts are labelled research summaries, not verbatim original-source quotations. It does not establish private analytics or a complete post history.
 - Private reach, saves, retention, lead quality, sales, ROI and scheduled posts are unknown unless supported by user-supplied context. There are no analytics integrations in this package.
 - A trend needs dated cited research to be ranked; candidates without a publication date or older than 90 days are left out of ranked opportunities. This conservative application rule prevents old evidence being presented as current.
-- Each audit is isolated. There is no durable client database, approved-strategy retrieval, multi-user role system or persistent brand memory. The report exports a reusable brand profile; supply approved context for a future audit.
+- Each audit is isolated. Saved client profiles and reports are supported by the private single-instance data store. There is still no multi-user role system or automatic retrieval of approved strategies beyond the context explicitly saved in each profile.
 - All 30 days are proposed drafts. Daily frequency is a planning assumption, not approval to publish daily.
 - Redirects between the bare and `www` domain are supported; redirects to unrelated domains are not followed by the page reader. Paste the final official URL if needed.
 
 ## Data handling and access
 
-The API key remains on the server. The password creates an HTTP-only, same-site session cookie. Audit jobs are readable only by their initiating session. Completed reports expire from server memory after 30 minutes (cleanup runs once a minute); the browser keeps its displayed report until cleared or closed. Restarting the service loses sessions and jobs. No report files or client context are written to disk by the app.
+The API key remains on the server. The password creates an HTTP-only, same-site session cookie. Audit jobs are readable only by their initiating session. Temporary jobs expire from server memory after 30 minutes (cleanup runs once a minute). Completed reports are also copied into the persistent private data directory until deleted. Restarting the service loses active sessions and jobs but not saved profiles and completed reports when DATA_DIR is on durable storage. Completed audit reports and saved client profiles are written to the private configured data directory.
 
 The API requests use `store: false`; this is not a promise of zero retention by the AI provider. Review the provider's account-specific data policies. Do not submit confidential customer records or credentials. The app asks for acknowledgement before sending content to the AI service.
 
